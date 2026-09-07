@@ -16,7 +16,8 @@ export const authoptions =  NextAuth({
       // OAuth authentication providers...
       GitHubProvider({
         clientId: process.env.GITHUB_ID,
-        clientSecret: process.env.GITHUB_SECRET
+        clientSecret: process.env.GITHUB_SECRET,
+         issuer: "https://github.com/login/oauth"//changed
       }),
     //   AppleProvider({
     //     clientId: process.env.APPLE_ID,
